@@ -61,27 +61,27 @@ m = int(input('Введите количество элементов второ
 
 # ВАРИАНТ_4
 
-# set_1 = {i ** 2 for i in range(n)}
-# set_2 = {(i + 1) * 3 for i in range(m)}
+set_1 = {i ** 2 for i in range(n)}
+set_2 = {(i + 1) * 3 for i in range(m)}
 
-# print(set_1)
-# print(set_2)
+print(set_1)
+print(set_2)
 
 #_________________________________________________________________________________________________________________________________________________
 
 # ВАРИАНТ_5
-set_1 = set()
-set_2 = set()
+# set_1 = set()
+# set_2 = set()
 
-for i in range(n):
-    x = random.randrange(1, n)
-    set_1.add(x)
-for i in range(m):
-    y = random.randrange(m)
-    set_2.add(y)
+# for i in range(n):
+#     x = random.randrange(1, n)
+#     set_1.add(x)
+# for i in range(m):
+#     y = random.randrange(m)
+#     set_2.add(y)
 
-print(set_1)
-print(set_2)
+# print(set_1)
+# print(set_2)
 
 #____________________________________________________________________________________________________________________________________________________
 
@@ -90,7 +90,11 @@ set_res = set_1.intersection(set_2)
 print(set_res)
 
 list_res = list(set_res)
+list_res.sort()
 print(list_res)
+
+
+
 
 
 
