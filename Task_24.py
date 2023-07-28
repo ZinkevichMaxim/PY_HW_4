@@ -8,18 +8,18 @@
 import random
 bush = int(input('Введите количество кустов \n'))
 barrys = []
+#if bush >= 3:
+for i in range(bush):
+    x = random.randrange(1, bush)
+    barrys.append(x)
+print(barrys)
 if bush >= 3:
-    for i in range(bush):
-        x = random.randrange(1, bush)
-        barrys.append(x)
-    print(barrys)
     sum = barrys[0] + barrys[1] + barrys[bush-1]
     for i in range(1, bush - 2):
         sum = sum + barrys[i + 1]
-    print(sum)
+    print(f'С грядки Вы сможете собрать {sum} ягод \n')
 else:
-    print('Слишком мало кустов; модуль не работает')
-
+    print('Слишком мало кустов. Модуль не работает\n')
 
 
 
